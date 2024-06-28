@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Travel Blogger</title>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="logo.jpg" alt="Travel Logo">
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+  
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="video-background">
+      <video id="background-video" autoplay loop muted>
+        <source src="Alffy Rev - The Beauty of Bali (ft. Meiska Adinda, Gung Indi & Gus Teja).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+  
+  <!-- Card Section -->
+  <section class="card-container">
+    <div class="card" data-toggle="modal" data-target="#placeModal1" onclick="changeBackgroundVideo('bali');">
+      <img src="bali.jpg" alt="Gambar Bali"/>
+      <div class="card-content">
+        <h3>Pulau Bali</h3>
+        <p>Wisatawan dari seluruh dunia datang untuk menikmati keindahan pantai dan budaya unik Bali.</p>
+      </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#placeModal2" onclick="changeBackgroundVideo('jogja');">
+      <img src="jogja.jpg" alt="Gambar Yogyakarta"/>
+      <div class="card-content">
+        <h3>Kota Yogyakarta</h3>
+        <p>Menyimpan sejarah kerajaan dan kekayaan seni serta budaya Jawa yang klasik dan indah.</p>
+      </div>
+    </div>
+    <div class="card" data-toggle="modal" data-target="#placeModal3" onclick="changeBackgroundVideo('lombok');">
+      <img src="lombok.jpg" alt="Gambar Pulau Lombok"/>
+      <div class="card-content">
+        <h3>Pulau Lombok</h3>
+        <p>Penyelaman hebat dan pertemuan dengan komodo, kadal raksasa yang hanya ada di Indonesia.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  <div class="modal fade" id="placeModal1" tabindex="-1" role="dialog" aria-labelledby="placeModalLabel1" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="placeModalLabel1">Pulau Bali</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe id="modal-video1" class="img-fluid" src="https://www.youtube.com/embed/wz5O-9uTI4s?autoplay=1&loop=1&playlist=wz5O-9uTI4s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p>Bali, juga dikenal sebagai Pulau Dewata, menawarkan pantai yang memikat, budaya yang kaya, dan keindahan alam yang menakjubkan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="placeModal2" tabindex="-1" role="dialog" aria-labelledby="placeModalLabel2" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="placeModalLabel2">Kota Yogyakarta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe id="modal-video2" class="img-fluid" src="https://www.youtube.com/embed/gsSsT0t7GMQ?autoplay=1&loop=1&playlist=gsSsT0t7GMQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p>Yogyakarta adalah kota dengan sejarah panjang, warisan kerajaan, seni rupa, dan budaya yang kaya.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="placeModal3" tabindex="-1" role="dialog" aria-labelledby="placeModalLabel3" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="placeModalLabel3">Pulau Lombok</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <iframe id="modal-video3" class="img-fluid" src="https://www.youtube.com/embed/BbkFE_K_t0c?autoplay=1&loop=1&playlist=BbkFE_K_t0c" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <p>Pulau Lombok adalah surga bagi pecinta pantai dengan keindahan alam yang menakjubkan.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Additional Info Section -->
+  <section class="additional-info">
+    <h2>Menjelajahi Keindahan Indonesia</h2>
+    <p>Jelajahi keindahan alam, budaya, dan makanan Indonesia yang memikat. Rencanakan petualangan Anda ke destinasi yang paling menarik di Nusantara.</p>
+    <button onclick="location.href='contact.html'">Hubungi Kami</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container-fot">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-4 text-left">
+          <img src="logo.jpg" alt="Logo Travel" class="footer-logo"/>
+        </div>
+        <div class="col-md-4 text-center">
+          <nav class="vertical-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="col-md-4 text-right">
+          <div class="social-icons">
+            <a href="https://www.instagram.com/travelblogger" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/travelblogger" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com/travelblogger" target="_blank"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Function to change background video based on clicked card
+    function changeBackgroundVideo(place) {
+      let videoSrc = '';
+
+      if (place === 'bali') {
+        videoSrc = 'https://www.youtube.com/embed/wz5O-9uTI4s?autoplay=1&loop=1&playlist=wz5O-9uTI4s';
+      } else if (place === 'jogja') {
+        videoSrc = 'https://www.youtube.com/embed/gsSsT0t7GMQ?autoplay=1&loop=1&playlist=gsSsT0t7GMQ';
+      } else if (place === 'lombok') {
+        videoSrc = 'https://www.youtube.com/embed/BbkFE_K_t0c?autoplay=1&loop=1&playlist=BbkFE_K_t0c';
+      }
+
+      // Update background video iframe src
+      $('#background-video').attr('src', videoSrc);
+    }
+  </script>
+</body>
+</html>
